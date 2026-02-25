@@ -1,0 +1,388 @@
+@font-face {
+    font-family: SangBleu family;
+    src: url('../Font/SangBleuSunriseTrial-Regular.otf');
+}
+
+:root {
+    --primary-color: #E5DCE5;
+    --secondary-color: #AA6AAA;
+    --tirtiary-color: #18212D;
+    --p-color: #717175;
+    --white-color: #ffff;
+    --font-SangBleu: SangBleu family;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1164px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hdr-container {
+    max-width: 1422px;
+}
+
+.footer-container {
+    max-width: 1422px;
+}
+
+.primary-btn {
+    background: var(--secondary-color);
+    border-radius: 50px;
+    color: var(--white-color);
+    padding: 14px 16px;
+}
+
+.secondary-btn {
+    background: var(--primary-color);
+    border-radius: 50px;
+    color: var(--tirtiary-color);
+    padding: 14px 16px;
+}
+
+.tirtiary-btn {
+    color: var(--tirtiary-color);
+    font-size: 16px;
+}
+
+.title-2 {
+    font-family: var(--font-SangBleu);
+    color: var(--tirtiary-color);
+    font-size: 50px;
+}
+
+/* Header-sec */
+.header-sec {
+    position: relative;
+    z-index: 1055;
+}
+
+.nav-item {
+    margin-right: 47px;
+}
+
+.navbar-brand {
+    max-width: 224px;
+}
+
+.navbar-brand>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* banner-sec */
+.banner-sec {
+    margin-top: -105px;
+    padding-top: 50px;
+}
+
+.banner-wrpr {
+    background: url('../Assets/there-is-man-walking-sand-dune-desert-generative-ai_56221099.htm.png') no-repeat center/cover;
+}
+
+.banner-cntnt>.primary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 36px auto;
+}
+
+.banner-cntnt>.title-1 {
+    font-size: 54px;
+    text-align: center;
+    max-width: 888px;
+    font-family: var(--font-SangBleu);
+    padding-top: 48px;
+    margin: 0 auto;
+}
+
+.banner-cntnt>p {
+    max-width: 817px;
+    color: var(--p-color);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.banner-cntnt>.banner-pic {
+    max-width: 1140px;
+}
+
+.banner-pic>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* get-in-touch-sec*/
+.get-in-touch-sec {
+    padding: 81px 0;
+}
+
+.left-pic {
+    max-width: 478px;
+    border-radius: 27px;
+    margin-top: 82px;
+}
+
+.left-pic>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.right-pic {
+    max-width: 440px;
+    border-radius: 27px;
+}
+
+.right-pic>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.right-cntnt>p {
+    color: var(--p-color);
+    margin-top: 72px;
+    max-width: 499px;
+    font-size: 16px;
+    margin-bottom: 77px;
+}
+
+.right-cntnt>.primary-btn {
+    padding: 15px 41px;
+}
+
+/* extraordinary -sec */
+.extraordinary-sec {
+    padding: 30px 0;
+}
+
+.extraordinary-sec .title-2 {
+    max-width: 834px;
+    margin: 47px auto;
+}
+
+.card-cntnt-1 {
+    background: #EAE4EA;
+    border-radius: 10px;
+    padding: 57px 29px 30px 28px;
+    margin-bottom: 30px;
+    max-width: 360px;
+}
+
+.card-cntnt-1>h5 {
+    font-family: var(--font-SangBleu);
+}
+
+.card-cntnt-2 {
+    background: #AA6AAA;
+    border-radius: 10px;
+    padding: 57px 29px 30px 28px;
+    color: white;
+    margin-bottom: 30px;
+    max-width: 360px;
+}
+
+.card-cntnt-2>h5 {
+    font-family: var(--font-SangBleu);
+}
+
+.building-img1 {
+    max-width: 360px;
+    margin-bottom: 30px;
+}
+
+.building-img1>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* testimonial-sec */
+
+.testimonial-text>h6 {
+    color: var(--secondary-color);
+    font-family: var(--font-SangBleu);
+}
+
+
+.testimonial-section {
+    background: #f9f9f9;
+}
+
+.swiper {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    opacity: 0.4;
+    transform: scale(0.4);
+    transition: 0.3s;
+}
+
+.swiper-slide img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(2.2);
+}
+
+/* footer-sec */
+.footer-sec {
+    background: var(--tirtiary-color);
+    padding: 128px 0;
+}
+
+.footer-logo {
+    max-width: 195px;
+}
+
+.footer-logo>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-heading {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-family: var(--font-SangBleu);
+    margin-bottom: 48px;
+}
+
+.footer-link>li>a {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.email-input-form {
+    background: none;
+    border: 1px solid #EEF0F8;
+    border-radius: 50px;
+    display: flex;
+
+}
+
+.email-input-form>input[type="email"] {
+    background: transparent;
+    border: none;
+    display: inline-block;
+    height: 100%;
+    width: 200px;
+    padding: 18px 14px;
+}
+
+@media screen and (max-width:992px) {
+
+    /*get-in touch section  */
+    .left-pic {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .right-cntnt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .left-cntnt>.title-2 {
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .right-cntnt>p {
+        margin: 49px 0;
+        font-size: 13px;
+    }
+
+    /* extraordinary -sec */
+    .building-img1 {
+        margin: 20px auto;
+    }
+
+    /* footer-sec */
+    .footer-whole {
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .card-cntnt-1,
+    .card-cntnt-2 {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .title-2 {
+        font-size: 39px;
+    }
+
+    /* hdr-sec */
+    .navbar-brand {
+        max-width: 150px;
+    }
+
+    /* banner-sec */
+    .banner-cntnt>.title-1 {
+        font-size: 37px;
+    }
+
+    .banner-cntnt>p {
+        font-size: 14px;
+    }
+
+    .banner-cntnt>.primary-btn {
+        margin: 18px auto;
+    }
+
+    /* footer-sec */
+    .footer-sec{
+        padding: 30px 0;
+    }
+    .footer-whole {
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+       margin: 30px auto;
+    }
+}
