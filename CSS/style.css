@@ -82,11 +82,13 @@ a {
 /* Header-sec */
 .header-sec {
     position: relative;
-    z-index: 1055;
 }
 
 .nav-item {
     margin-right: 47px;
+}
+.navbar-toggler {
+    margin-left: auto;
 }
 
 .nav-link {
@@ -98,12 +100,19 @@ a {
 .nav-link:hover {
     color: var(--secondary-color);
 }
-
-.navbar-brand {
-    max-width: 224px;
+.navbar {
+    padding: 15px 0;  
 }
 
-.navbar-brand>img {
+.main-logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    max-width: 224px;
+    z-index: 1001;
+}
+
+.main-logo>img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -119,7 +128,7 @@ a {
 /* banner-sec */
 .banner-sec {
     margin-top: -105px;
-    padding-top: 50px;
+    padding-top: 111px;
 }
 
 .banner-wrpr {
@@ -225,27 +234,33 @@ a {
     margin: 47px auto;
 }
 
-.card-cntnt-1 {
+ .card-cntnt-1,
+.card-cntnt-2 {
     background: #EAE4EA;
     border-radius: 10px;
     padding: 57px 29px 30px 28px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     max-width: 360px;
-    font-family: var(--dm-sans-family);
+    /* height: 100%;              */
+    display: flex;            
+    flex-direction: column;   
+    align-items: stretch;
+}
+
+.card-cntnt-2 {
+    background: #AA6AAA;
+    color: white;
 }
 
 .card-cntnt-1>h5 {
     font-family: var(--font-SangBleu);
 }
+.card-cntnt-1>p{
+    max-width: 281px;
+}
 
-.card-cntnt-2 {
-    background: #AA6AAA;
-    border-radius: 10px;
-    padding: 57px 29px 30px 28px;
-    color: white;
-    margin-bottom: 30px;
-    max-width: 360px;
-    font-family: var(--dm-sans-family);
+.card-cntnt-2>p{
+    max-width: 281px;
 }
 
 .card-cntnt-2>h5 {
@@ -254,13 +269,15 @@ a {
 
 .building-img1 {
     max-width: 360px;
-    margin-bottom: 30px;
+    /* height: 100%; */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .building-img1>img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* testimonial-sec */
@@ -510,6 +527,11 @@ a {
     .nav-item {
         margin: 0;
     }
+    .main-logo{
+        max-width: 140px;
+       transform: scale(1.1);
+       top: 12px;
+    }
 }
 
 @media screen and (max-width:992px) {
@@ -609,13 +631,13 @@ a {
     }
 
     /* hdr-sec */
-    .navbar-brand {
+    .main-logo {
         max-width: 150px;
     }
 
     /* banner-sec */
     .banner-cntnt>.title-1 {
-        font-size: 37px;
+        font-size: 26px;
     }
 
     .banner-cntnt>p {
@@ -623,7 +645,8 @@ a {
     }
 
     .banner-cntnt>.primary-btn {
-        margin: 18px auto;
+        margin: 15px auto;
+        padding: 12px 20px;
     }
 
     /* footer-sec */
